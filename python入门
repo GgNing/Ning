@@ -1,0 +1,62 @@
+def aaaa(a,b,c,d,e,f,g):
+    totalPrice=b+c+d+e+f+g
+    r=a/totalPrice
+    print("总价:",totalPrice,"元")
+    print("折扣价是：",a,"元")
+    print("折扣是：","%.2f" %r)
+    bb=round(r*b, 2)
+    cc=round(r*c, 2)
+    dd=round(r*d, 2)
+    ee=round(r*e, 2)
+    ff=round(r*f, 2)
+    gg=round(r*g, 2)
+    print("第一个人需要支付：",bb,"元")
+    if c!=0:
+        print("第二个人需要支付：",cc,"元")
+    if d!=0:
+        print("第三个人需要支付：",dd,"元")
+    if e!=0:
+        print("第四个人需要支付：",ee,"元")
+    if f!=0:
+        print("第五个人需要支付：",ff,"元")
+    if g!=0:
+        print("第六个人需要支付：",gg,"元")
+
+c=0
+d=0
+e=0
+g=0
+f=0
+a=input("折后价为：")
+a=float(a)
+if a == 0:
+    print("吃霸王餐？滚！")
+else:
+    b=input("第一个人原价为：")
+    b=float(b)
+    if b == 0:
+        print("玩我呢？")
+    else:
+        c=input("第二个人原价为：")
+        c=float(c)
+        if c == 0:
+           aaaa(a,b,c,d,e,f,g)
+        else:
+            d=input("第三个人原价为：")
+            d=float(d)
+            if d == 0:
+                aaaa(a,b,c,d,e,f,g)
+            else:
+                e=input("第四个人原价为：")
+                e=float(e)
+                if e == 0:
+                    aaaa(a,b,c,d,e,f,g)
+                else:
+                    f=input("第五个人原价为：")
+                    f=float(f)
+                    if f == 0:
+                        aaaa(a,b,c,d,e,f,g)
+                    else:
+                        g=input("第六个人原价为：")
+                        g=float(g)
+                        aaaa(a,b,c,d,e,f,g)
